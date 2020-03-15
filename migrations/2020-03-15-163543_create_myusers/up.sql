@@ -8,7 +8,7 @@ CREATE TABLE myusers (
 	avatar VARCHAR,
 	created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
 	updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
-	cells VARCHAR,
+	cells VARCHAR
 );
 
 SELECT diesel_manage_updated_at('myusers');
